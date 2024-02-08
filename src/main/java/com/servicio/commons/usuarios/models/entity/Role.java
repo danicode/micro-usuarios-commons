@@ -1,4 +1,4 @@
-package com.servicio.usuarioscommons.models.entity;
+package com.servicio.commons.usuarios.models.entity;
 
 import jakarta.persistence.*;
 
