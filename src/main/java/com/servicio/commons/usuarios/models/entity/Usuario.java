@@ -1,6 +1,6 @@
 package com.servicio.commons.usuarios.models.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 import java.util.List;
@@ -32,6 +32,16 @@ public class Usuario implements Serializable {
             inverseJoinColumns = @JoinColumn(name = "role_id"),
             uniqueConstraints = {@UniqueConstraint(columnNames = { "usuario_id", "role_id" }) })
     private List<Role> roles;
+
+    private Integer intentos;
+
+    public Integer getIntentos() {
+        return intentos;
+    }
+
+    public void setIntentos(Integer intentos) {
+        this.intentos = intentos;
+    }
 
     public List<Role> getRoles() {
         return roles;

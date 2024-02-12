@@ -1,6 +1,6 @@
 package com.servicio.commons.usuarios.models.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 
